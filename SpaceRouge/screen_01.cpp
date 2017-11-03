@@ -19,12 +19,12 @@ int screen_01::Run (sf::RenderWindow &App) {
         {
             // Close window: exit
             if (event.type == sf::Event::Closed) {
-                App.close();
+                return -1;
             }
             
             // Escape pressed: exit
             if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
-                App.close();
+                return -1;
             }
         }
         
