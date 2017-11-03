@@ -15,6 +15,7 @@
 		123687161FABB657009B8CAE /* cScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123687141FABB657009B8CAE /* cScreen.cpp */; };
 		123687191FABB753009B8CAE /* screen_01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123687171FABB753009B8CAE /* screen_01.cpp */; };
 		12F7352A1FACAA83007FF8A8 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F735281FACAA83007FF8A8 /* Player.cpp */; };
+		12F7352D1FACE5C7007FF8A8 /* Element.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F7352B1FACE5C7007FF8A8 /* Element.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		123687181FABB753009B8CAE /* screen_01.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = screen_01.hpp; sourceTree = "<group>"; };
 		12F735281FACAA83007FF8A8 /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		12F735291FACAA83007FF8A8 /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
+		12F7352B1FACE5C7007FF8A8 /* Element.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Element.cpp; sourceTree = "<group>"; };
+		12F7352C1FACE5C7007FF8A8 /* Element.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Element.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 			children = (
 				12F735281FACAA83007FF8A8 /* Player.cpp */,
 				12F735291FACAA83007FF8A8 /* Player.hpp */,
+				12F7352B1FACE5C7007FF8A8 /* Element.cpp */,
+				12F7352C1FACE5C7007FF8A8 /* Element.hpp */,
 				123686FE1FAB83A7009B8CAE /* ResourcePath.mm */,
 				123687001FAB83A7009B8CAE /* ResourcePath.hpp */,
 				123687011FAB83A7009B8CAE /* main.cpp */,
@@ -188,6 +193,7 @@
 				123687131FAB8DD3009B8CAE /* Game.cpp in Sources */,
 				123687021FAB83A7009B8CAE /* main.cpp in Sources */,
 				12F7352A1FACAA83007FF8A8 /* Player.cpp in Sources */,
+				12F7352D1FACE5C7007FF8A8 /* Element.cpp in Sources */,
 				123686FF1FAB83A7009B8CAE /* ResourcePath.mm in Sources */,
 				123687161FABB657009B8CAE /* cScreen.cpp in Sources */,
 				123687191FABB753009B8CAE /* screen_01.cpp in Sources */,

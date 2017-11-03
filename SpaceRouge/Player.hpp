@@ -12,8 +12,9 @@
 #include <stdio.h>
 #include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
+#include "Element.hpp"
 
-class Player : public sf::Drawable {
+class Player : public sf::Drawable, public Element  {
     
 public:
     
