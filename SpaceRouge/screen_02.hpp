@@ -11,7 +11,19 @@
 
 #include "cScreen.hpp"
 
-
+struct option{
+    option(std::string t, int _return_code, sf::Font& _f, int size, sf::Vector2f pos, sf::Color color): return_code(_return_code)
+    {
+        text.setString(std::move(t));
+        text.setFont(_f);
+        text.setCharacterSize(size);
+        text.setPosition(pos);
+        text.setFillColor(color);
+    }
+    sf::Text text;
+    int return_code;
+    
+};
 
 class screen_02 : public cScreen {
     
@@ -19,9 +31,10 @@ public:
     virtual int Run (sf::RenderWindow &App) override;
     
 private:
-    sf::Text start;
-    sf::Text exit;
+    std::vector<option> options;
     sf::Font Font;
+    sf::Event event;
+    int menu;
 };
 
 

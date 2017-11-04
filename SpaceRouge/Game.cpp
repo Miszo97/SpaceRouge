@@ -11,6 +11,7 @@
 #include "Game.hpp"
 #include "cScreen.hpp"
 #include "screen_01.hpp"
+#include "screen_02.hpp"
 
 void Game::exec() noexcept{
     
@@ -22,9 +23,10 @@ void Game::exec() noexcept{
     window.setFramerateLimit(60);
     
     
-    
-    screen_01 s0;
-    Screens.push_back(&s0);
+    screen_01 s1; //game
+    screen_02 s2; //menu
+    Screens.push_back(&s2);
+    Screens.push_back(&s1);
     
     
     //Main loop
