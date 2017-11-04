@@ -9,7 +9,8 @@
 #ifndef screen_01_hpp
 #define screen_01_hpp
 #include "cScreen.hpp"
-
+#include "Player.hpp"
+#include "Element.hpp"
 #include <stdio.h>
 
 
@@ -20,7 +21,7 @@ public:
     
 private:
     sf::Event event;
-    
+    Player p;
     
 };
 

@@ -9,11 +9,12 @@
 #ifndef Game_hpp
 #define Game_hpp
 
-#include <stdio.h>
+#include "Player.hpp"
 
 class Game{
 public:
     void exec() noexcept;
+    
     
     
 };

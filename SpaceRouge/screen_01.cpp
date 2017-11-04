@@ -12,6 +12,8 @@
 
 int screen_01::Run (sf::RenderWindow &App) {
     
+    
+    
     while(1){
         
         
@@ -28,7 +30,13 @@ int screen_01::Run (sf::RenderWindow &App) {
             }
         }
         
+        p.setPosistion(40, sf::Mouse::getPosition().y);
+        
+        p.update();
+        
         App.clear(sf::Color::White);
+        
+        App.draw(p);
         
         App.display();
         

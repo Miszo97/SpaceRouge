@@ -17,13 +17,20 @@
 class Player : public sf::Drawable, public Element  {
     
 public:
+    Player();
+    Player(int, int);
     
     Player(const Player& other) = delete;
     Player& operator=(const Player& other) = delete;
+    virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
+    sf::CircleShape& getTriangle();
+    void setPosistion(int,int);
+    void update();
     
+
     
 private:
-    
+    sf::CircleShape triangle;
     
     
 };

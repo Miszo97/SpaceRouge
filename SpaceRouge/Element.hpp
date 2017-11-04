@@ -24,4 +24,7 @@ protected:
     
 };
 
+inline Element::~Element()
+{}
+
 #endif /* Element_hpp */
