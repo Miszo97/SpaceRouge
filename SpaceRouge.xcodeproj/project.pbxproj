@@ -16,6 +16,7 @@
 		123687191FABB753009B8CAE /* screen_01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123687171FABB753009B8CAE /* screen_01.cpp */; };
 		12F7352A1FACAA83007FF8A8 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F735281FACAA83007FF8A8 /* Player.cpp */; };
 		12F7352D1FACE5C7007FF8A8 /* Element.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F7352B1FACE5C7007FF8A8 /* Element.cpp */; };
+		12F735301FAE2830007FF8A8 /* screen_02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F7352E1FAE2830007FF8A8 /* screen_02.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		12F735291FACAA83007FF8A8 /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
 		12F7352B1FACE5C7007FF8A8 /* Element.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Element.cpp; sourceTree = "<group>"; };
 		12F7352C1FACE5C7007FF8A8 /* Element.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Element.hpp; sourceTree = "<group>"; };
+		12F7352E1FAE2830007FF8A8 /* screen_02.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = screen_02.cpp; sourceTree = "<group>"; };
+		12F7352F1FAE2830007FF8A8 /* screen_02.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = screen_02.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				12F735281FACAA83007FF8A8 /* Player.cpp */,
+				12F7352E1FAE2830007FF8A8 /* screen_02.cpp */,
+				12F7352F1FAE2830007FF8A8 /* screen_02.hpp */,
 				12F735291FACAA83007FF8A8 /* Player.hpp */,
 				12F7352B1FACE5C7007FF8A8 /* Element.cpp */,
 				12F7352C1FACE5C7007FF8A8 /* Element.hpp */,
@@ -197,6 +202,7 @@
 				123686FF1FAB83A7009B8CAE /* ResourcePath.mm in Sources */,
 				123687161FABB657009B8CAE /* cScreen.cpp in Sources */,
 				123687191FABB753009B8CAE /* screen_01.cpp in Sources */,
+				12F735301FAE2830007FF8A8 /* screen_02.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
