@@ -15,11 +15,8 @@
 class Element {
 public:
     virtual ~Element() = 0;
-    
-    
-    
-    
-protected:
+    Element(int, int);
+
     sf::Vector2i pos;
     
 };

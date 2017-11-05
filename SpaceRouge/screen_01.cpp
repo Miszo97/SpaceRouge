@@ -9,11 +9,15 @@
 #include "screen_01.hpp"
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include "SmallObstacle.hpp"
+
 
 int screen_01::Run (sf::RenderWindow &App) {
     
+   
     
-    
+    Obstacles.push_back(std::unique_ptr<Obstacle>( new SmallObstacle(400,10,10,10,10,sf::Color::Green,sf::CircleShape(80,3))));
+
     while(1){
         
         
@@ -37,6 +41,9 @@ int screen_01::Run (sf::RenderWindow &App) {
         App.clear(sf::Color::White);
         
         App.draw(p);
+        
+        for(const auto& o: Obstacles)
+            App.draw(*o);
         
         App.display();
         

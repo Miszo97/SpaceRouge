@@ -11,6 +11,7 @@
 #include "cScreen.hpp"
 #include "Player.hpp"
 #include "Element.hpp"
+#include "Obstacle.hpp"
 #include <stdio.h>
 
 
@@ -22,6 +23,8 @@ public:
 private:
     sf::Event event;
     Player p;
+    std::vector<std::unique_ptr<Obstacle>> Obstacles;
+    
     
 };
 

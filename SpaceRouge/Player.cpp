@@ -14,7 +14,7 @@ void Player::draw(sf::RenderTarget& target, sf::RenderStates states) const {
     target.draw(triangle);
 }
 
-Player::Player(){
+Player::Player() : Element(40,200){
     
     pos.x = 40;
     pos.y = 200;
@@ -29,9 +29,8 @@ Player::Player(){
 }
 
 
-Player::Player(int x, int y){
+Player::Player(int x, int y) : Element(40,200){
     
-    pos = sf::Vector2i(x,y);
     triangle = sf::CircleShape(3,80);
 }
 
