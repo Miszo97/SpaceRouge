@@ -12,11 +12,15 @@
 #include <SFML/Graphics.hpp>
 #include <stdio.h>
 
+
+
 class Obstacle : public Element, public sf::Drawable {
     
 public:
     virtual ~Obstacle() = 0;
     Obstacle(int x, int y);
+    void move() noexcept;
+    void update() noexcept;
 
 protected:
     int speed;

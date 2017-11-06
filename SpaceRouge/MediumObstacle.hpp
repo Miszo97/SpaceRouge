@@ -10,5 +10,20 @@
 #define MediumObstacle_hpp
 
 #include <stdio.h>
+#include "Obstacle.hpp"
+
+
+class MediumObstacle : public Obstacle {
+    
+public:
+    MediumObstacle(int x, int y,
+                  sf::Color color,
+                  const sf::CircleShape& shape);
+    
+    virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
+    
+    
+    
+};
 
 #endif /* MediumObstacle_hpp */

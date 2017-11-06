@@ -10,15 +10,13 @@
 
 
 SmallObstacle::SmallObstacle(
-              int x, int y, int _speed,
-              int _size,
-              int _hp,
+              int x, int y,
               sf::Color _color,
               const sf::CircleShape& _shape) : Obstacle(x,y)
 {
-    size = _size;
-    hp = _hp;
-    speed = _speed;
+    size = 20;
+    hp = 20;
+    speed = 10;
     color = _color;
     shape = _shape;
     

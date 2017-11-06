@@ -18,6 +18,7 @@
 		123E4D4F1FAF6FEA005E44F5 /* SmallObstacle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123E4D4D1FAF6FEA005E44F5 /* SmallObstacle.cpp */; };
 		123E4D521FAF6FFB005E44F5 /* MediumObstacle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123E4D501FAF6FFB005E44F5 /* MediumObstacle.cpp */; };
 		123E4D551FAF7009005E44F5 /* BigObstacle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123E4D531FAF7009005E44F5 /* BigObstacle.cpp */; };
+		12A1A7841FB06D2D0055CF34 /* functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12A1A7821FB06D2D0055CF34 /* functions.cpp */; };
 		12F7352A1FACAA83007FF8A8 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F735281FACAA83007FF8A8 /* Player.cpp */; };
 		12F7352D1FACE5C7007FF8A8 /* Element.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F7352B1FACE5C7007FF8A8 /* Element.cpp */; };
 		12F735301FAE2830007FF8A8 /* screen_02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F7352E1FAE2830007FF8A8 /* screen_02.cpp */; };
@@ -45,6 +46,8 @@
 		123E4D511FAF6FFB005E44F5 /* MediumObstacle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MediumObstacle.hpp; sourceTree = "<group>"; };
 		123E4D531FAF7009005E44F5 /* BigObstacle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BigObstacle.cpp; sourceTree = "<group>"; };
 		123E4D541FAF7009005E44F5 /* BigObstacle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigObstacle.hpp; sourceTree = "<group>"; };
+		12A1A7821FB06D2D0055CF34 /* functions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = functions.cpp; sourceTree = "<group>"; };
+		12A1A7831FB06D2D0055CF34 /* functions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = functions.hpp; sourceTree = "<group>"; };
 		12F735281FACAA83007FF8A8 /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		12F735291FACAA83007FF8A8 /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
 		12F7352B1FACE5C7007FF8A8 /* Element.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Element.cpp; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 		123686EF1FAB83A7009B8CAE = {
 			isa = PBXGroup;
 			children = (
+				12A1A7821FB06D2D0055CF34 /* functions.cpp */,
+				12A1A7831FB06D2D0055CF34 /* functions.hpp */,
 				123686FB1FAB83A7009B8CAE /* SpaceRouge */,
 				123686FA1FAB83A7009B8CAE /* Products */,
 			);
@@ -221,6 +226,7 @@
 				123687021FAB83A7009B8CAE /* main.cpp in Sources */,
 				12F7352A1FACAA83007FF8A8 /* Player.cpp in Sources */,
 				12F7352D1FACE5C7007FF8A8 /* Element.cpp in Sources */,
+				12A1A7841FB06D2D0055CF34 /* functions.cpp in Sources */,
 				123686FF1FAB83A7009B8CAE /* ResourcePath.mm in Sources */,
 				123687161FABB657009B8CAE /* cScreen.cpp in Sources */,
 				123687191FABB753009B8CAE /* screen_01.cpp in Sources */,

@@ -16,9 +16,7 @@
 class SmallObstacle : public Obstacle {
     
 public:
-    SmallObstacle(int x, int y, int speed,
-                  int size,
-                  int hp,
+    SmallObstacle(int x, int y,
                   sf::Color color,
                   const sf::CircleShape& shape);
 

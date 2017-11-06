@@ -10,3 +10,13 @@
 
 Obstacle::Obstacle(int x, int y) : Element(x,y)
 {}
+
+
+void Obstacle::move() noexcept {
+    pos.x -= speed;
+}
+
+
+void Obstacle::update() noexcept{
+    shape.setPosition(pos.x, pos.y);
+}

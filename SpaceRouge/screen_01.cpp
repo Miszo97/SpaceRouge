@@ -10,13 +10,18 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include "SmallObstacle.hpp"
+#include "MediumObstacle.hpp"
+#include "BigObstacle.hpp"
+#include "functions.hpp"
 
 
 int screen_01::Run (sf::RenderWindow &App) {
     
-   
+    Obstacles.push_back(makeObstacle(1, 400,10,sf::Color::Green,sf::CircleShape(80)));
     
-    Obstacles.push_back(std::unique_ptr<Obstacle>( new SmallObstacle(400,10,10,10,10,sf::Color::Green,sf::CircleShape(80,3))));
+    //Obstacles.push_back(std::unique_ptr<Obstacle>( new SmallObstacle(400,10,sf::Color::Green,sf::CircleShape(80))));
+    
+    //Obstacles.push_back(std::unique_ptr<Obstacle>( new MediumObstacle(400,60,sf::Color::Green,sf::CircleShape(80))));
 
     while(1){
         
@@ -42,8 +47,11 @@ int screen_01::Run (sf::RenderWindow &App) {
         
         App.draw(p);
         
-        for(const auto& o: Obstacles)
+        for(const auto& o: Obstacles){
+            o->move();
+            o->update();
             App.draw(*o);
+        }
         
         App.display();
         
