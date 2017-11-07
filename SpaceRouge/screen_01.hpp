@@ -13,6 +13,10 @@
 #include "Element.hpp"
 #include "Obstacle.hpp"
 #include <stdio.h>
+#include <chrono>
+#include "functions.hpp"
+
+
 
 
 class screen_01 : public cScreen {
@@ -24,6 +28,8 @@ private:
     sf::Event event;
     Player p;
     std::vector<std::unique_ptr<Obstacle>> Obstacles;
+    void remove_if();
+    
     
     
 };

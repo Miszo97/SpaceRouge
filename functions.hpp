@@ -16,6 +16,7 @@
 #include "BigObstacle.hpp"
 
 
+
 template <typename T, typename... Ts>
 std::unique_ptr<Obstacle> makeObstacle(T choice, Ts... args){
     
@@ -40,5 +41,7 @@ std::unique_ptr<Obstacle> makeObstacle(T choice, Ts... args){
     return ptr;
     
 }
+
+
 
 #endif /* functions_hpp */
