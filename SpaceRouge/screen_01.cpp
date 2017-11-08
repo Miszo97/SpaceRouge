@@ -71,6 +71,11 @@ int screen_01::Run (sf::RenderWindow &App) {
             if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
                 return -1;
             }
+            
+            if (event.type == sf::Event::MouseButtonPressed)
+            {
+                p.shoot();
+            }
         }
         
         spawner(Obstacles);
@@ -84,14 +89,18 @@ int screen_01::Run (sf::RenderWindow &App) {
             o->update();
         }
         
-        //removing objectc if needed
-        remove_obstacle_if();
+        //removing objects if needed
+        remove_objects_if(&App);
         
-        std::cout<<Obstacles.size()<<std::endl;
+        std::cout<<Obstacles.size()<<" "<<p.getMissles().size()<<std::endl;
         
         App.clear(sf::Color::White);
         
         App.draw(p);
+        
+        //draw loop
+        for(const auto& m: p.getMissles())
+            App.draw(m);
         
         //draw loop
         for(const auto& o: Obstacles)
@@ -109,10 +118,18 @@ int screen_01::Run (sf::RenderWindow &App) {
     
 }
 
-void screen_01::remove_obstacle_if(){
-Obstacles.erase(std::remove_if(Obstacles.begin(), Obstacles.end(),
+void screen_01::remove_objects_if(sf::RenderWindow* App){
+    Obstacles.erase(std::remove_if(Obstacles.begin(), Obstacles.end(),
                                [](const std::unique_ptr<Obstacle>& ref){return ref->pos.x<0;})
                 ,Obstacles.end());
+    
+    //convinient reference
+    std::vector<Missle>& Missles = p.getMissles();
+    
+    Missles.erase(std::remove_if(Missles.begin(), Missles.end(),
+                                 [=](const Missle& ref){return ref.pos.x > App->getSize().x;})
+                  ,Missles.end());
+    
 
 }
 

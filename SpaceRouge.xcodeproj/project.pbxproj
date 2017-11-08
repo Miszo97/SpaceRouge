@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		122703301FB3895E00865212 /* Missle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1227032E1FB3895E00865212 /* Missle.cpp */; };
 		123686FF1FAB83A7009B8CAE /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 123686FE1FAB83A7009B8CAE /* ResourcePath.mm */; };
 		123687021FAB83A7009B8CAE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123687011FAB83A7009B8CAE /* main.cpp */; };
 		123687091FAB83A8009B8CAE /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 123687081FAB83A8009B8CAE /* sansation.ttf */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1227032E1FB3895E00865212 /* Missle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Missle.cpp; sourceTree = "<group>"; };
+		1227032F1FB3895E00865212 /* Missle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Missle.hpp; sourceTree = "<group>"; };
 		123686F91FAB83A7009B8CAE /* SpaceRouge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceRouge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		123686FD1FAB83A7009B8CAE /* SpaceRouge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpaceRouge-Info.plist"; sourceTree = "<group>"; };
 		123686FE1FAB83A7009B8CAE /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -108,6 +111,8 @@
 				123687111FAB8DD3009B8CAE /* Game.cpp */,
 				123687141FABB657009B8CAE /* cScreen.cpp */,
 				123687171FABB753009B8CAE /* screen_01.cpp */,
+				1227032E1FB3895E00865212 /* Missle.cpp */,
+				1227032F1FB3895E00865212 /* Missle.hpp */,
 				123687181FABB753009B8CAE /* screen_01.hpp */,
 				123687151FABB657009B8CAE /* cScreen.hpp */,
 				123687121FAB8DD3009B8CAE /* Game.hpp */,
@@ -228,6 +233,7 @@
 				12F7352D1FACE5C7007FF8A8 /* Element.cpp in Sources */,
 				12A1A7841FB06D2D0055CF34 /* functions.cpp in Sources */,
 				123686FF1FAB83A7009B8CAE /* ResourcePath.mm in Sources */,
+				122703301FB3895E00865212 /* Missle.cpp in Sources */,
 				123687161FABB657009B8CAE /* cScreen.cpp in Sources */,
 				123687191FABB753009B8CAE /* screen_01.cpp in Sources */,
 				12F735301FAE2830007FF8A8 /* screen_02.cpp in Sources */,

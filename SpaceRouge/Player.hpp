@@ -13,6 +13,7 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
 #include "Element.hpp"
+#include "Missle.hpp"
 
 class Player : public sf::Drawable, public Element  {
     
@@ -26,11 +27,13 @@ public:
     sf::CircleShape& getTriangle();
     void setPosistion(int,int);
     void update();
-    
+    void shoot() noexcept;
+    std::vector<Missle>& getMissles() noexcept;
 
     
 private:
     sf::CircleShape triangle;
+    std::vector<Missle> Missles;
     
     
 };

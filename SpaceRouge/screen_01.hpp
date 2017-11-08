@@ -28,7 +28,7 @@ private:
     sf::Event event;
     Player p;
     std::vector<std::unique_ptr<Obstacle>> Obstacles;
-    void remove_obstacle_if();
+    void remove_objects_if(sf::RenderWindow*);
     
     
     

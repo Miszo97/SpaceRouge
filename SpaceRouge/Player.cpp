@@ -44,7 +44,16 @@ void Player::setPosistion(int _x,int _y){
 void Player::update(){
     
     triangle.setPosition(pos.x, pos.y);
+    std::for_each(Missles.begin(), Missles.end(), [](Missle& m){m.move(); m.update();});
+}
+
+void Player::shoot() noexcept{
+    Missles.emplace_back(pos.x,pos.y);
+}
+
+std::vector<Missle>& Player::getMissles() noexcept{
+    return Missles;
 }
 
 
-sf::CircleShape& Player::getTriangle() { return triangle; }
+inline sf::CircleShape& Player::getTriangle() { return triangle; }
