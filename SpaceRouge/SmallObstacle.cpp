@@ -16,7 +16,7 @@ SmallObstacle::SmallObstacle(
 {
     size = 20;
     hp = 20;
-    speed = 5;
+    speed = 10;
     color = _color;
     shape = _shape;
     
