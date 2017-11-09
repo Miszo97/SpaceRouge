@@ -11,7 +11,7 @@
 BigObstacle::BigObstacle(
                                int x, int y,
                                sf::Color _color,
-                               const sf::CircleShape& _shape) : Obstacle(x,y)
+                               const sf::CircleShape& _shape, sf::Texture* _texture) : Obstacle(x,y, _texture)
 {
     size = 70;
     hp = 50;
@@ -27,5 +27,10 @@ BigObstacle::BigObstacle(
 
 void BigObstacle::draw(sf::RenderTarget& target, sf::RenderStates states) const {
     
-    target.draw(shape);
+    target.draw(sprite);
+}
+
+void BigObstacle::update() noexcept{
+    sprite.setPosition(pos.x, pos.y);
+    sprite.setTextureRect(sf::IntRect(0,0,155,138));
 }

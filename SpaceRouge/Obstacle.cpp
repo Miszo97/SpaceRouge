@@ -8,8 +8,10 @@
 
 #include "Obstacle.hpp"
 
-Obstacle::Obstacle(int x, int y) : Element(x,y)
-{}
+Obstacle::Obstacle(int x, int y, sf::Texture* _texture) : Element(x,y), texture(_texture)
+{
+    sprite.setTexture(*texture);
+}
 
 
 void Obstacle::move() noexcept {
@@ -17,6 +19,5 @@ void Obstacle::move() noexcept {
 }
 
 
-void Obstacle::update() noexcept{
-    shape.setPosition(pos.x, pos.y);
-}
+void Obstacle::update() noexcept
+{}

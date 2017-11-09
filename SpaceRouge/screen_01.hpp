@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <chrono>
 #include "functions.hpp"
+#include <array>
 
 
 
@@ -23,12 +24,14 @@ class screen_01 : public cScreen {
     
 public:
     virtual int Run (sf::RenderWindow &App) override;
+    screen_01();
     
 private:
     sf::Event event;
     Player p;
     std::vector<std::unique_ptr<Obstacle>> Obstacles;
     void remove_obstacle_if();
+    std::array<sf::Texture, 3> Textures;
     
     
     

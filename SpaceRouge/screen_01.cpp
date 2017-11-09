@@ -15,46 +15,23 @@
 #include "functions.hpp"
 #include <chrono>
 #include <random>
+#include "ResourcePath.hpp"
+#include "Spawner.cpp"
 
-struct Spawner{
-    
-    Spawner(sf::RenderWindow* _App) : App(_App)
-    {}
-    
-    sf::RenderWindow* App;
-    sf::Clock timer;
-    unsigned resp1for = 1.5;
-    unsigned resp2for = 5;
-    unsigned resp3for = 10;
-    
-    
-    void operator()(std::vector<std::unique_ptr<Obstacle>>& vector){
-        
-        if (timer.getElapsedTime().asSeconds()> resp1for) {
-            vector.push_back(makeObstacle(1, App->getSize().x,rand()%App->getSize().y,sf::Color::Blue,sf::CircleShape(80)));
-            resp1for += 1.5;
-        }
-        
-        if (timer.getElapsedTime().asSeconds()> resp2for) {
-            vector.push_back(makeObstacle(2, App->getSize().x,rand()%App->getSize().y,sf::Color::Yellow,sf::CircleShape(80)));
-            resp2for += 5;
-        }
-        
-        if (timer.getElapsedTime().asSeconds()> resp3for) {
-            vector.push_back(makeObstacle(3, App->getSize().x,rand()%App->getSize().y,sf::Color::Green,sf::CircleShape(80)));
-            resp3for += 10;
-        }
-        
+screen_01::screen_01(){
+    std::string path = "/Users/miszo97/Desktop/SpaceRouge/asteroids/BigObstacleTextureSprite.png";
+    if (!Textures[0].loadFromFile(path)) {
+        std::cerr << "Error loading background.png" << std::endl;
+        return (-1);
     }
-    
-    
-};
+}
+
 
 
 int screen_01::Run (sf::RenderWindow &App) {
     
     
-    Spawner spawner(&App);
+    Spawner spawner(&App, &Textures);
     
     while(1){
         

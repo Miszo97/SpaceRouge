@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		122703331FB4D2AD00865212 /* Spawner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 122703321FB4D2AD00865212 /* Spawner.cpp */; };
 		123686FF1FAB83A7009B8CAE /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 123686FE1FAB83A7009B8CAE /* ResourcePath.mm */; };
 		123687021FAB83A7009B8CAE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123687011FAB83A7009B8CAE /* main.cpp */; };
 		123687091FAB83A8009B8CAE /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 123687081FAB83A8009B8CAE /* sansation.ttf */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		122703311FB4D24200865212 /* asteroids */ = {isa = PBXFileReference; lastKnownFileType = folder; path = asteroids; sourceTree = SOURCE_ROOT; };
+		122703321FB4D2AD00865212 /* Spawner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Spawner.cpp; sourceTree = "<group>"; };
 		123686F91FAB83A7009B8CAE /* SpaceRouge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceRouge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		123686FD1FAB83A7009B8CAE /* SpaceRouge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpaceRouge-Info.plist"; sourceTree = "<group>"; };
 		123686FE1FAB83A7009B8CAE /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -48,6 +51,9 @@
 		123E4D541FAF7009005E44F5 /* BigObstacle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigObstacle.hpp; sourceTree = "<group>"; };
 		12A1A7821FB06D2D0055CF34 /* functions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = functions.cpp; sourceTree = "<group>"; };
 		12A1A7831FB06D2D0055CF34 /* functions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = functions.hpp; sourceTree = "<group>"; };
+		12AB557C1FB4E8B4002887D9 /* a10001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = a10001.png; path = asteroids/large/a10001.png; sourceTree = SOURCE_ROOT; };
+		12AB557E1FB4E993002887D9 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		12AB557F1FB4EE4E002887D9 /* BigObstacleTextureSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BigObstacleTextureSprite.png; path = asteroids/BigObstacleTextureSprite.png; sourceTree = SOURCE_ROOT; };
 		12F735281FACAA83007FF8A8 /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		12F735291FACAA83007FF8A8 /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
 		12F7352B1FACE5C7007FF8A8 /* Element.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Element.cpp; sourceTree = "<group>"; };
@@ -108,6 +114,7 @@
 				123687111FAB8DD3009B8CAE /* Game.cpp */,
 				123687141FABB657009B8CAE /* cScreen.cpp */,
 				123687171FABB753009B8CAE /* screen_01.cpp */,
+				122703321FB4D2AD00865212 /* Spawner.cpp */,
 				123687181FABB753009B8CAE /* screen_01.hpp */,
 				123687151FABB657009B8CAE /* cScreen.hpp */,
 				123687121FAB8DD3009B8CAE /* Game.hpp */,
@@ -128,6 +135,10 @@
 		123687031FAB83A7009B8CAE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				12AB557F1FB4EE4E002887D9 /* BigObstacleTextureSprite.png */,
+				12AB557E1FB4E993002887D9 /* background.png */,
+				12AB557C1FB4E8B4002887D9 /* a10001.png */,
+				122703311FB4D24200865212 /* asteroids */,
 				123687081FAB83A8009B8CAE /* sansation.ttf */,
 				1236870A1FAB83A8009B8CAE /* icon.png */,
 			);
@@ -220,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				122703331FB4D2AD00865212 /* Spawner.cpp in Sources */,
 				123E4D4F1FAF6FEA005E44F5 /* SmallObstacle.cpp in Sources */,
 				123E4D521FAF6FFB005E44F5 /* MediumObstacle.cpp in Sources */,
 				123687131FAB8DD3009B8CAE /* Game.cpp in Sources */,
