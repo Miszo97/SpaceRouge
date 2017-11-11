@@ -49,11 +49,12 @@
 		123E4D511FAF6FFB005E44F5 /* MediumObstacle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MediumObstacle.hpp; sourceTree = "<group>"; };
 		123E4D531FAF7009005E44F5 /* BigObstacle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BigObstacle.cpp; sourceTree = "<group>"; };
 		123E4D541FAF7009005E44F5 /* BigObstacle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigObstacle.hpp; sourceTree = "<group>"; };
+		1297FC981FB61CA300C95751 /* MediumObstacleTextureSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MediumObstacleTextureSprite.png; sourceTree = "<group>"; };
+		1297FC991FB61FAD00C95751 /* BigObstacleTextureSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BigObstacleTextureSprite.png; sourceTree = "<group>"; };
+		1297FC9A1FB78AB500C95751 /* SmallObstacleTextureSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmallObstacleTextureSprite.png; sourceTree = "<group>"; };
 		12A1A7821FB06D2D0055CF34 /* functions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = functions.cpp; sourceTree = "<group>"; };
 		12A1A7831FB06D2D0055CF34 /* functions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = functions.hpp; sourceTree = "<group>"; };
-		12AB557C1FB4E8B4002887D9 /* a10001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = a10001.png; path = asteroids/large/a10001.png; sourceTree = SOURCE_ROOT; };
 		12AB557E1FB4E993002887D9 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
-		12AB557F1FB4EE4E002887D9 /* BigObstacleTextureSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BigObstacleTextureSprite.png; path = asteroids/BigObstacleTextureSprite.png; sourceTree = SOURCE_ROOT; };
 		12F735281FACAA83007FF8A8 /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		12F735291FACAA83007FF8A8 /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
 		12F7352B1FACE5C7007FF8A8 /* Element.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Element.cpp; sourceTree = "<group>"; };
@@ -135,9 +136,10 @@
 		123687031FAB83A7009B8CAE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				12AB557F1FB4EE4E002887D9 /* BigObstacleTextureSprite.png */,
+				1297FC9A1FB78AB500C95751 /* SmallObstacleTextureSprite.png */,
+				1297FC991FB61FAD00C95751 /* BigObstacleTextureSprite.png */,
+				1297FC981FB61CA300C95751 /* MediumObstacleTextureSprite.png */,
 				12AB557E1FB4E993002887D9 /* background.png */,
-				12AB557C1FB4E8B4002887D9 /* a10001.png */,
 				122703311FB4D24200865212 /* asteroids */,
 				123687081FAB83A8009B8CAE /* sansation.ttf */,
 				1236870A1FAB83A8009B8CAE /* icon.png */,

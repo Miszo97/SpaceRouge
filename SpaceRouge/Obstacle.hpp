@@ -31,6 +31,8 @@ protected:
     sf::Texture* texture;
     sf::Sprite sprite;
     
+    int current_sprite;
+    
     
 };
 

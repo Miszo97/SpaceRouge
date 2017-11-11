@@ -32,5 +32,9 @@ void MediumObstacle::draw(sf::RenderTarget& target, sf::RenderStates states) con
 
 void MediumObstacle::update() noexcept{
     sprite.setPosition(pos.x, pos.y);
-    sprite.setTextureRect(sf::IntRect(0,0,155,138));
+    sprite.setTextureRect(sf::IntRect(0,43*current_sprite,44,43));
+    if(current_sprite==15)
+        current_sprite =0;
+        else
+            ++current_sprite;
 }

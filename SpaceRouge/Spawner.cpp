@@ -16,6 +16,7 @@
 #include <array>
 
 
+
 struct Spawner{
     
     Spawner(sf::RenderWindow*, std::array<sf::Texture, 3>*);
@@ -28,7 +29,10 @@ struct Spawner{
     unsigned resp3for = 10;
     
     
+    
     void operator()(std::vector<std::unique_ptr<Obstacle>>& vector){
+        
+        
         
         if (timer.getElapsedTime().asSeconds()> resp1for) {
             vector.push_back(makeObstacle(1, App->getSize().x,rand()%App->getSize().y,sf::Color::Blue,sf::CircleShape(80), &(*Textueres)[0]));

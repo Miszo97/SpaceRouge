@@ -19,18 +19,32 @@
 #include "Spawner.cpp"
 
 screen_01::screen_01(){
-    std::string path = "/Users/miszo97/Desktop/SpaceRouge/asteroids/BigObstacleTextureSprite.png";
+    
+    std::string path = "/Users/miszo97/Desktop/SpaceRouge/SpaceRouge/SmallObstacleTextureSprite.png";
     if (!Textures[0].loadFromFile(path)) {
-        std::cerr << "Error loading background.png" << std::endl;
+        std::cerr << "Error loading SmallObstacleTextureSprite.png" << std::endl;
         return (-1);
     }
+    
+    path = "/Users/miszo97/Desktop/SpaceRouge/SpaceRouge/MediumObstacleTextureSprite.png";
+    if (!Textures[1].loadFromFile(path)) {
+        std::cerr << "Error loading MediumObstacleTextureSprite.png" << std::endl;
+        return (-1);
+    }
+    
+    path = "/Users/miszo97/Desktop/SpaceRouge/SpaceRouge/BigObstacleTextureSprite.png";
+    if (!Textures[2].loadFromFile(path)) {
+        std::cerr << "Error loading BigObstacleTextureSprite.png" << std::endl;
+        return (-1);
+    }
+    
 }
 
 
 
 int screen_01::Run (sf::RenderWindow &App) {
     
-    
+    srand( time( NULL ) );
     Spawner spawner(&App, &Textures);
     
     while(1){
