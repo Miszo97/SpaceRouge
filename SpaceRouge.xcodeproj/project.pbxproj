@@ -28,13 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
+
 		1227032E1FB3895E00865212 /* Missle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Missle.cpp; sourceTree = "<group>"; };
 		1227032F1FB3895E00865212 /* Missle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Missle.hpp; sourceTree = "<group>"; };
-=======
+
 		122703311FB4D24200865212 /* asteroids */ = {isa = PBXFileReference; lastKnownFileType = folder; path = asteroids; sourceTree = SOURCE_ROOT; };
 		122703321FB4D2AD00865212 /* Spawner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Spawner.cpp; sourceTree = "<group>"; };
->>>>>>> texture
+
 		123686F91FAB83A7009B8CAE /* SpaceRouge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceRouge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		123686FD1FAB83A7009B8CAE /* SpaceRouge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpaceRouge-Info.plist"; sourceTree = "<group>"; };
 		123686FE1FAB83A7009B8CAE /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -122,12 +122,12 @@
 				123687111FAB8DD3009B8CAE /* Game.cpp */,
 				123687141FABB657009B8CAE /* cScreen.cpp */,
 				123687171FABB753009B8CAE /* screen_01.cpp */,
-<<<<<<< HEAD
+
 				1227032E1FB3895E00865212 /* Missle.cpp */,
 				1227032F1FB3895E00865212 /* Missle.hpp */,
-=======
+
 				122703321FB4D2AD00865212 /* Spawner.cpp */,
->>>>>>> texture
+
 				123687181FABB753009B8CAE /* screen_01.hpp */,
 				123687151FABB657009B8CAE /* cScreen.hpp */,
 				123687121FAB8DD3009B8CAE /* Game.hpp */,
