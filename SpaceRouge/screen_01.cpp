@@ -15,46 +15,37 @@
 #include "functions.hpp"
 #include <chrono>
 #include <random>
+#include "ResourcePath.hpp"
+#include "Spawner.cpp"
 
-struct Spawner{
+screen_01::screen_01(){
     
-    Spawner(sf::RenderWindow* _App) : App(_App)
-    {}
-    
-    sf::RenderWindow* App;
-    sf::Clock timer;
-    unsigned resp1for = 1.5;
-    unsigned resp2for = 5;
-    unsigned resp3for = 10;
-    
-    
-    void operator()(std::vector<std::unique_ptr<Obstacle>>& vector){
-        
-        if (timer.getElapsedTime().asSeconds()> resp1for) {
-            vector.push_back(makeObstacle(1, App->getSize().x,rand()%App->getSize().y,sf::Color::Blue,sf::CircleShape(80)));
-            resp1for += 1.5;
-        }
-        
-        if (timer.getElapsedTime().asSeconds()> resp2for) {
-            vector.push_back(makeObstacle(2, App->getSize().x,rand()%App->getSize().y,sf::Color::Yellow,sf::CircleShape(80)));
-            resp2for += 5;
-        }
-        
-        if (timer.getElapsedTime().asSeconds()> resp3for) {
-            vector.push_back(makeObstacle(3, App->getSize().x,rand()%App->getSize().y,sf::Color::Green,sf::CircleShape(80)));
-            resp3for += 10;
-        }
-        
+    std::string path = "/Users/miszo97/Desktop/SpaceRouge/SpaceRouge/SmallObstacleTextureSprite.png";
+    if (!Textures[0].loadFromFile(path)) {
+        std::cerr << "Error loading SmallObstacleTextureSprite.png" << std::endl;
+        return (-1);
     }
     
+    path = "/Users/miszo97/Desktop/SpaceRouge/SpaceRouge/MediumObstacleTextureSprite.png";
+    if (!Textures[1].loadFromFile(path)) {
+        std::cerr << "Error loading MediumObstacleTextureSprite.png" << std::endl;
+        return (-1);
+    }
     
-};
+    path = "/Users/miszo97/Desktop/SpaceRouge/SpaceRouge/BigObstacleTextureSprite.png";
+    if (!Textures[2].loadFromFile(path)) {
+        std::cerr << "Error loading BigObstacleTextureSprite.png" << std::endl;
+        return (-1);
+    }
+    
+}
+
 
 
 int screen_01::Run (sf::RenderWindow &App) {
     
-    
-    Spawner spawner(&App);
+    srand( time( NULL ) );
+    Spawner spawner(&App, &Textures);
     
     while(1){
         

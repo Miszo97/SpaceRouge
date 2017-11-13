@@ -18,9 +18,9 @@ class Obstacle : public Element, public sf::Drawable {
     
 public:
     virtual ~Obstacle() = 0;
-    Obstacle(int x, int y);
+    Obstacle(int x, int y, sf::Texture*);
     void move() noexcept;
-    void update() noexcept;
+    virtual void update() noexcept;
 
 protected:
     int speed;
@@ -28,6 +28,10 @@ protected:
     int hp;
     sf::Color color;
     sf::CircleShape shape;
+    sf::Texture* texture;
+    sf::Sprite sprite;
+    
+    int current_sprite;
     
     
 };

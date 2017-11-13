@@ -18,11 +18,11 @@ class SmallObstacle : public Obstacle {
 public:
     SmallObstacle(int x, int y,
                   sf::Color color,
-                  const sf::CircleShape& shape);
+                  const sf::CircleShape& shape, sf::Texture*);
 
     virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
+    virtual void update() noexcept;
 
-    
     
 };
 
