@@ -19,9 +19,9 @@
 
 struct Spawner{
     
-    Spawner(sf::RenderWindow*, std::array<sf::Texture, 3>*);
+    Spawner(sf::RenderWindow*, std::array<sf::Texture, 4>*);
     
-    std::array<sf::Texture, 3>* Textueres;
+    std::array<sf::Texture, 4>* Textueres;
     sf::RenderWindow* App;
     sf::Clock timer;
     unsigned resp1for = 1.5;
@@ -40,12 +40,12 @@ struct Spawner{
         }
         
         if (timer.getElapsedTime().asSeconds()> resp2for) {
-            vector.push_back(makeObstacle(2, App->getSize().x,rand()%App->getSize().y,sf::Color::Yellow,sf::CircleShape(80), &(*Textueres)[0]));
+            vector.push_back(makeObstacle(2, App->getSize().x,rand()%App->getSize().y,sf::Color::Yellow,sf::CircleShape(80), &(*Textueres)[1]));
             resp2for += 5;
         }
         
         if (timer.getElapsedTime().asSeconds()> resp3for) {
-            vector.push_back(makeObstacle(3, App->getSize().x,rand()%App->getSize().y,sf::Color::Green,sf::CircleShape(80), &(*Textueres)[0]));
+            vector.push_back(makeObstacle(3, App->getSize().x,rand()%App->getSize().y,sf::Color::Green,sf::CircleShape(80), &(*Textueres)[2]));
             resp3for += 10;
         }
         
@@ -54,7 +54,7 @@ struct Spawner{
     
 };
 
-inline Spawner::Spawner(sf::RenderWindow* _App, std::array<sf::Texture, 3>* _Textures) : App(_App), Textueres(_Textures)
+inline Spawner::Spawner(sf::RenderWindow* _App, std::array<sf::Texture, 4>* _Textures) : App(_App), Textueres(_Textures)
 {
     
     

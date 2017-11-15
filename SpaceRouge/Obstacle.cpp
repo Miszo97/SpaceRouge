@@ -11,6 +11,7 @@
 Obstacle::Obstacle(int x, int y, sf::Texture* _texture) : Element(x,y), texture(_texture)
 {
     sprite.setTexture(*texture);
+    newSpriteEvery = 0;
 }
 
 
@@ -21,3 +22,10 @@ void Obstacle::move() noexcept {
 
 void Obstacle::update() noexcept
 {}
+
+
+sf::IntRect getIntRect() noexcept{
+    
+    
+    
+}
