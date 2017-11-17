@@ -20,8 +20,9 @@ public:
                   sf::Color color,
                   const sf::CircleShape& shape, sf::Texture*);
 
-    virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
-    virtual void update() noexcept;
+    virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
+    virtual void update() noexcept override;
+    sf::IntRect getIntRect() noexcept;
 
     
 };

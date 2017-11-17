@@ -31,14 +31,16 @@ protected:
     sf::CircleShape shape;
     sf::Texture* texture;
     sf::Sprite sprite;
-    
-    int current_sprite;
-    
+    int newSpriteEvery;
+
+    sf::IntRect getIntRect() noexcept;
+    std::pair<int, int> current_sprite;
     
 };
 
 inline Obstacle::~Obstacle()
 {}
+
 
 
 #endif /* Obstacle_hpp */

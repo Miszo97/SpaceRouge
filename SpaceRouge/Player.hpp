@@ -14,6 +14,7 @@
 #include <SFML/Graphics.hpp>
 #include "Element.hpp"
 #include "Missle.hpp"
+#include <array>
 
 class Player : public sf::Drawable, public Element  {
     
@@ -32,6 +33,8 @@ public:
 
     
 private:
+    sf::Sprite sprite;
+    std::array<sf::Texture, 1> Textures;
     sf::CircleShape triangle;
     std::vector<Missle> Missles;
     

@@ -22,6 +22,9 @@ MediumObstacle::MediumObstacle(
     shape.setFillColor(color);
     shape.setPosition(pos.x, pos.y);
     shape.setRadius(size);
+    
+    current_sprite.first = 0;
+    current_sprite.second = 0;
 }
 
 
@@ -32,9 +35,27 @@ void MediumObstacle::draw(sf::RenderTarget& target, sf::RenderStates states) con
 
 void MediumObstacle::update() noexcept{
     sprite.setPosition(pos.x, pos.y);
-    sprite.setTextureRect(sf::IntRect(0,43*current_sprite,44,43));
-    if(current_sprite==15)
-        current_sprite =0;
-        else
-            ++current_sprite;
+    if(++newSpriteEvery==4){
+        sprite.setTextureRect(getIntRect());
+        newSpriteEvery =0;
+    }
+}
+
+sf::IntRect MediumObstacle::getIntRect() noexcept{
+    
+    auto rec = sf::IntRect(current_sprite.first*93,current_sprite.second*86,93,86);
+    
+    ++current_sprite.first;
+    
+    if (current_sprite.first == 1){
+        
+        current_sprite.first = 0;
+        ++current_sprite.second;
+        
+    }
+    
+    if(current_sprite.second == 16)
+        current_sprite.first = current_sprite.second = 0;
+        
+        return rec;
 }

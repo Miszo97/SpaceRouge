@@ -37,6 +37,8 @@ screen_01::screen_01(){
         std::cerr << "Error loading BigObstacleTextureSprite.png" << std::endl;
         return (-1);
     }
+
+
     
 }
 
@@ -71,7 +73,8 @@ int screen_01::Run (sf::RenderWindow &App) {
         
         spawner(Obstacles);
         
-        p.setPosistion(40, sf::Mouse::getPosition().y);
+        
+        p.setPosistion(40, sf::Mouse::getPosition(App).y);
         
         p.update();
         

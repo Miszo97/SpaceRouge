@@ -31,7 +31,8 @@ private:
     Player p;
     std::vector<std::unique_ptr<Obstacle>> Obstacles;
     void remove_objects_if(sf::RenderWindow*);
-    std::array<sf::Texture, 3> Textures;
+    std::array<sf::Texture, 4> Textures;
+    
 
     
     
