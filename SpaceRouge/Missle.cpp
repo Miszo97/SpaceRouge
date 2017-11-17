@@ -35,4 +35,9 @@ void Missle::move() noexcept{
 void Missle::update() noexcept{
     
     shape.setPosition(pos.x, pos.y);
+    sprite.setPosition(pos.x, pos.y);
+}
+
+sf::Sprite& Missle::getSprite() noexcept{
+    return sprite;
 }

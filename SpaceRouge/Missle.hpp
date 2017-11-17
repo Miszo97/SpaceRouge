@@ -19,9 +19,11 @@ public:
     virtual void draw(sf::RenderTarget& target, sf::RenderStates states)  const;
     void move() noexcept;
     void update() noexcept;
+    sf::Sprite& getSprite() noexcept;
 
 private:
     sf::CircleShape shape;
+    sf::Sprite sprite;
     int speed;
     
 };

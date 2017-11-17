@@ -21,6 +21,7 @@ public:
     Obstacle(int x, int y, sf::Texture*);
     void move() noexcept;
     virtual void update() noexcept;
+    sf::Sprite& getSprite() noexcept;
 
 protected:
     int speed;

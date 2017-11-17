@@ -21,3 +21,9 @@ void Obstacle::move() noexcept {
 
 void Obstacle::update() noexcept
 {}
+
+
+sf::Sprite& Obstacle::getSprite() noexcept{
+    return sprite;
+
+}
