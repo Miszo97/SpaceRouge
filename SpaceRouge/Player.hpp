@@ -34,7 +34,7 @@ public:
     
 private:
     sf::Sprite sprite;
-    std::array<sf::Texture, 1> Textures;
+    std::array<sf::Texture, 2> Textures;
     sf::CircleShape triangle;
     std::vector<Missle> Missles;
     

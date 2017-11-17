@@ -11,7 +11,7 @@
 Obstacle::Obstacle(int x, int y, sf::Texture* _texture) : Element(x,y), texture(_texture)
 {
     sprite.setTexture(*texture);
-    newSpriteEvery = 0;
+    newSpriteEvery = 3;
 }
 
 
@@ -31,3 +31,12 @@ sf::Sprite& Obstacle::getSprite() noexcept{
 
 sf::IntRect Obstacle::getIntRect() noexcept
 {}
+
+void Obstacle::reduceHp(int _hp) noexcept{
+    hp-=_hp;
+}
+
+int Obstacle::getHp() noexcept{
+    return hp;
+}
+

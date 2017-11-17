@@ -14,7 +14,7 @@ MediumObstacle::MediumObstacle(
                              const sf::CircleShape& _shape, sf::Texture* _texture) : Obstacle(x,y, _texture)
 {
     size = 40;
-    hp = 20;
+    hp = 15;
     speed = 5;
     color = _color;
     shape = _shape;

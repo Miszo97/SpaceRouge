@@ -113,16 +113,25 @@ int screen_01::Run (sf::RenderWindow &App) {
 }
 
 void screen_01::remove_objects_if(sf::RenderWindow* App){
-    Obstacles.erase(std::remove_if(Obstacles.begin(), Obstacles.end(),
-                               [](const std::unique_ptr<Obstacle>& ref){return ref->pos.x<0;})
-                ,Obstacles.end());
+    
+    auto prediction1 =  [](const std::unique_ptr<Obstacle>& ref){
+        return  ref->pos.x<0 || ref->getHp()==0;
+    };
+    
+    Obstacles.erase(std::remove_if(Obstacles.begin(), Obstacles.end(), prediction1) ,Obstacles.end());
     
     //convinient reference
     std::vector<Missle>& Missles = p.getMissles();
     
-    Missles.erase(std::remove_if(Missles.begin(), Missles.end(),
-                                 [=](const Missle& ref){return ref.pos.x > App->getSize().x;})
-                  ,Missles.end());
+    
+    auto prediction2 = [=](Missle& ref){
+        if( ref.pos.x > App->getSize().x || ref.checkForCollision(Obstacles))
+            return true; return false;
+    };
+    
+    Missles.erase(std::remove_if(Missles.begin(), Missles.end(),prediction2),Missles.end());
+    
+    
     
 
 }

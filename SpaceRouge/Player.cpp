@@ -34,6 +34,12 @@ Player::Player() : Element(40,200){
         return (-1);
     }
     
+    path = "/Users/miszo97/Desktop/SpaceRouge/SpaceRouge/shot.png";
+    if (!Textures[1].loadFromFile(path)) {
+        std::cerr << "Error loading shot.png" << std::endl;
+        return (-1);
+    }
+    
     
     sprite.setTexture(Textures[0]);
     
@@ -67,7 +73,7 @@ void Player::update(){
 }
 
 void Player::shoot() noexcept{
-    Missles.emplace_back(pos.x+100,pos.y+5);
+    Missles.emplace_back(pos.x+100,pos.y+5, Textures[1]);
 }
 
 std::vector<Missle>& Player::getMissles() noexcept{

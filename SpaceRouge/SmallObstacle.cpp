@@ -15,7 +15,7 @@ SmallObstacle::SmallObstacle(
               const sf::CircleShape& _shape, sf::Texture* _texture) : Obstacle(x,y, _texture)
 {
     size = 20;
-    hp = 20;
+    hp = 5;
     speed = 10;
     color = _color;
     shape = _shape;

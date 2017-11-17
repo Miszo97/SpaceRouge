@@ -22,6 +22,8 @@ public:
     void move() noexcept;
     virtual void update() noexcept;
     sf::Sprite& getSprite() noexcept;
+    void reduceHp(int) noexcept;
+    int getHp() noexcept;
 
 protected:
     int speed;
