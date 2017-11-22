@@ -40,13 +40,12 @@ Player::Player() : Element(40,200){
         return (-1);
     }
     
-    
     sprite.setTexture(Textures[0]);
     
     sprite.setScale(0.15, 0.15);
     sf::FloatRect rect = sprite.getGlobalBounds();
     sprite.setOrigin(pos.x + rect.width, pos.y+ rect.height);
-
+    
     
 }
 

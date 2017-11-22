@@ -9,6 +9,7 @@
 #include "Missle.hpp"
 #include "Obstacle.hpp"
 #include "functions.hpp"
+#include "Collision.hpp"
 
 void Missle::draw(sf::RenderTarget& target, sf::RenderStates states) const{
     
@@ -46,7 +47,7 @@ sf::Sprite& Missle::getSprite() noexcept{
 bool Missle::checkForCollision(std::vector<std::unique_ptr<Obstacle>>& obs) noexcept{
     
     for(auto const& it: obs){
-        if(CollisionDetector(*this, *it)){
+        if(Collision::PixelPerfectTest(sprite, it->getSprite())){
             it->reduceHp(5); return true;
         }
     }

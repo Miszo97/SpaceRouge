@@ -41,10 +41,7 @@ std::unique_ptr<Obstacle> makeObstacle(T choice, Ts... args){
     return ptr;
     
 }
-template <typename T1, typename T2>
-bool CollisionDetector(T1&& Object_1,T2&& Object_2){
-    return Object_1.getSprite().getGlobalBounds().intersects(Object_2.getSprite().getGlobalBounds());
-}
+
 
 
 #endif /* functions_hpp */
