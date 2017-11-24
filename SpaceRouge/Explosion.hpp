@@ -15,14 +15,28 @@
 class Explosion : public Element, public sf::Drawable {
     
 public:
-    Explosion(int, int);
+    Explosion(int, int, sf::Texture*);
     virtual ~Explosion() = 0;
-    
-    
-    
+    bool expired;
+    sf::Clock timer;
+    virtual void checkForExpired()  noexcept;
+    virtual void update() noexcept;
+protected:
+    unsigned expired_time;
+    sf::Texture* texture;
+    sf::Sprite sprite;
+    std::pair<int, int> current_sprite;
+    int newSpriteEvery;
+
 };
 
 #endif /* Explosion_hpp */
 
 inline Explosion::~Explosion()
+{}
+
+inline void Explosion::checkForExpired()  noexcept
+{}
+
+inline void Explosion::update()  noexcept
 {}

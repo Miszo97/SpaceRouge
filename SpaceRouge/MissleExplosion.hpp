@@ -13,10 +13,12 @@
 
 class MissleExplosion : public Explosion  {
 public:
-    MissleExplosion(int, int);
-    virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
+    MissleExplosion(int, int, sf::Texture*);
+    virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
+    virtual void checkForExpired() noexcept override;
+    virtual void update() noexcept override;
 private:
-    
+    sf::IntRect getIntRect() noexcept;
     sf::CircleShape shape;
 
     

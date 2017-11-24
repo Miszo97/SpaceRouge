@@ -8,5 +8,9 @@
 
 #include "Explosion.hpp"
 
-Explosion::Explosion(int x, int y) : Element(x, y)
-{}
+Explosion::Explosion(int x, int y, sf::Texture* _texture) : Element(x, y)
+{
+    texture = _texture;
+    sprite.setTexture(*texture);
+    newSpriteEvery = 3;
+}

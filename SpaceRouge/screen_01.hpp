@@ -34,7 +34,8 @@ private:
     void remove_objects_if(sf::RenderWindow*);
     std::array<sf::Texture, 4> Textures;
     std::deque<MissleExplosion> MissleExplosions;
-
+    sf::Texture missle_Exp_Tex;
+    
     
     
     

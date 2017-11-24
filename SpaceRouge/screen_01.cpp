@@ -37,6 +37,14 @@ screen_01::screen_01(){
         std::cerr << "Error loading BigObstacleTextureSprite.png" << std::endl;
         return (-1);
     }
+    
+    
+    path = "/Users/miszo97/Desktop/SpaceRouge/SpaceRouge/boom3.png";
+    if (!missle_Exp_Tex.loadFromFile(path)) {
+        std::cerr << "Error loading boom3.png" << std::endl;
+        return (-1);
+    }
+    
 
 
     
@@ -83,12 +91,16 @@ int screen_01::Run (sf::RenderWindow &App) {
             o->update();
         }
         
+        for(auto& o: MissleExplosions){
+            o.update();
+        }
+        
         //removing objects if needed
         remove_objects_if(&App);
         
         //std::cout<<Obstacles.size()<<" "<<p.getMissles().size()<<std::endl;
         
-        App.clear(sf::Color::White);
+        App.clear(sf::Color::Black);
         
         App.draw(p);
         
@@ -133,7 +145,7 @@ void screen_01::remove_objects_if(sf::RenderWindow* App){
         if( ref.pos.x > App->getSize().x)
          return true;
         if( ref.checkForCollision(Obstacles)){
-            MissleExplosions.emplace_front(ref.pos.x, ref.pos.y);
+            MissleExplosions.emplace_front(ref.pos.x, ref.pos.y, &missle_Exp_Tex);
             std::cout<<"Explosion!"<<ref.pos.x<<" "<<ref.pos.y<<std::endl;
         return true;
         }
@@ -142,7 +154,9 @@ void screen_01::remove_objects_if(sf::RenderWindow* App){
     
     Missles.erase(std::remove_if(Missles.begin(), Missles.end(),prediction2),Missles.end());
     
-    
+    if(!MissleExplosions.empty() && MissleExplosions.back().expired == true){
+        MissleExplosions.pop_back();
+    }
     
 
 }
