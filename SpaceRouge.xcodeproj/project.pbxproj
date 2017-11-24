@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		120089541FC85F280080EE3C /* MissleExplosion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 120089521FC85F280080EE3C /* MissleExplosion.cpp */; };
+		120089571FC85F340080EE3C /* MeteorExplosion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 120089551FC85F340080EE3C /* MeteorExplosion.cpp */; };
 		122703301FB3895E00865212 /* Missle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1227032E1FB3895E00865212 /* Missle.cpp */; };
 		122703331FB4D2AD00865212 /* Spawner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 122703321FB4D2AD00865212 /* Spawner.cpp */; };
 		123686FF1FAB83A7009B8CAE /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 123686FE1FAB83A7009B8CAE /* ResourcePath.mm */; };
@@ -21,6 +23,7 @@
 		123E4D521FAF6FFB005E44F5 /* MediumObstacle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123E4D501FAF6FFB005E44F5 /* MediumObstacle.cpp */; };
 		123E4D551FAF7009005E44F5 /* BigObstacle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123E4D531FAF7009005E44F5 /* BigObstacle.cpp */; };
 		127E547A1FC5F14D00B667AA /* Collision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127E54781FC5F14C00B667AA /* Collision.cpp */; };
+		127E547D1FC6249300B667AA /* Explosion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127E547B1FC6249300B667AA /* Explosion.cpp */; };
 		12A1A7841FB06D2D0055CF34 /* functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12A1A7821FB06D2D0055CF34 /* functions.cpp */; };
 		12F7352A1FACAA83007FF8A8 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F735281FACAA83007FF8A8 /* Player.cpp */; };
 		12F7352D1FACE5C7007FF8A8 /* Element.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F7352B1FACE5C7007FF8A8 /* Element.cpp */; };
@@ -28,6 +31,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		120089521FC85F280080EE3C /* MissleExplosion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MissleExplosion.cpp; sourceTree = "<group>"; };
+		120089531FC85F280080EE3C /* MissleExplosion.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MissleExplosion.hpp; sourceTree = "<group>"; };
+		120089551FC85F340080EE3C /* MeteorExplosion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MeteorExplosion.cpp; sourceTree = "<group>"; };
+		120089561FC85F340080EE3C /* MeteorExplosion.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MeteorExplosion.hpp; sourceTree = "<group>"; };
 		1227032E1FB3895E00865212 /* Missle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Missle.cpp; sourceTree = "<group>"; };
 		1227032F1FB3895E00865212 /* Missle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Missle.hpp; sourceTree = "<group>"; };
 		122703311FB4D24200865212 /* asteroids */ = {isa = PBXFileReference; lastKnownFileType = folder; path = asteroids; sourceTree = SOURCE_ROOT; };
@@ -55,6 +62,8 @@
 		123E4D541FAF7009005E44F5 /* BigObstacle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigObstacle.hpp; sourceTree = "<group>"; };
 		127E54781FC5F14C00B667AA /* Collision.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Collision.cpp; sourceTree = "<group>"; };
 		127E54791FC5F14D00B667AA /* Collision.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Collision.hpp; sourceTree = "<group>"; };
+		127E547B1FC6249300B667AA /* Explosion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Explosion.cpp; sourceTree = "<group>"; };
+		127E547C1FC6249300B667AA /* Explosion.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Explosion.hpp; sourceTree = "<group>"; };
 		1297FC981FB61CA300C95751 /* MediumObstacleTextureSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MediumObstacleTextureSprite.png; sourceTree = "<group>"; };
 		1297FC991FB61FAD00C95751 /* BigObstacleTextureSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BigObstacleTextureSprite.png; sourceTree = "<group>"; };
 		1297FC9A1FB78AB500C95751 /* SmallObstacleTextureSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmallObstacleTextureSprite.png; sourceTree = "<group>"; };
@@ -113,6 +122,8 @@
 				12F7352E1FAE2830007FF8A8 /* screen_02.cpp */,
 				12F7352F1FAE2830007FF8A8 /* screen_02.hpp */,
 				12F735291FACAA83007FF8A8 /* Player.hpp */,
+				127E547B1FC6249300B667AA /* Explosion.cpp */,
+				127E547C1FC6249300B667AA /* Explosion.hpp */,
 				12F7352B1FACE5C7007FF8A8 /* Element.cpp */,
 				12F7352C1FACE5C7007FF8A8 /* Element.hpp */,
 				123686FE1FAB83A7009B8CAE /* ResourcePath.mm */,
@@ -121,6 +132,10 @@
 				123687111FAB8DD3009B8CAE /* Game.cpp */,
 				123687141FABB657009B8CAE /* cScreen.cpp */,
 				123687171FABB753009B8CAE /* screen_01.cpp */,
+				120089521FC85F280080EE3C /* MissleExplosion.cpp */,
+				120089531FC85F280080EE3C /* MissleExplosion.hpp */,
+				120089551FC85F340080EE3C /* MeteorExplosion.cpp */,
+				120089561FC85F340080EE3C /* MeteorExplosion.hpp */,
 				1227032E1FB3895E00865212 /* Missle.cpp */,
 				127E54781FC5F14C00B667AA /* Collision.cpp */,
 				127E54791FC5F14D00B667AA /* Collision.hpp */,
@@ -245,13 +260,16 @@
 			files = (
 				122703331FB4D2AD00865212 /* Spawner.cpp in Sources */,
 				123E4D4F1FAF6FEA005E44F5 /* SmallObstacle.cpp in Sources */,
+				127E547D1FC6249300B667AA /* Explosion.cpp in Sources */,
 				123E4D521FAF6FFB005E44F5 /* MediumObstacle.cpp in Sources */,
 				123687131FAB8DD3009B8CAE /* Game.cpp in Sources */,
 				123687021FAB83A7009B8CAE /* main.cpp in Sources */,
 				12F7352A1FACAA83007FF8A8 /* Player.cpp in Sources */,
 				12F7352D1FACE5C7007FF8A8 /* Element.cpp in Sources */,
 				12A1A7841FB06D2D0055CF34 /* functions.cpp in Sources */,
+				120089571FC85F340080EE3C /* MeteorExplosion.cpp in Sources */,
 				123686FF1FAB83A7009B8CAE /* ResourcePath.mm in Sources */,
+				120089541FC85F280080EE3C /* MissleExplosion.cpp in Sources */,
 				122703301FB3895E00865212 /* Missle.cpp in Sources */,
 				127E547A1FC5F14D00B667AA /* Collision.cpp in Sources */,
 				123687161FABB657009B8CAE /* cScreen.cpp in Sources */,

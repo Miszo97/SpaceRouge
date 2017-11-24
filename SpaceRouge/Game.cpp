@@ -17,7 +17,7 @@ void Game::exec() noexcept{
     
     //Applications variables
     std::vector<cScreen*> Screens;
-    int screen = 0;
+    int screen = 1;
     
     sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window", sf::Style::Close);
     window.setFramerateLimit(60);

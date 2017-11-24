@@ -12,11 +12,12 @@
 #include "Player.hpp"
 #include "Element.hpp"
 #include "Obstacle.hpp"
+#include "MissleExplosion.hpp"
 #include <stdio.h>
 #include <chrono>
 #include "functions.hpp"
 #include <array>
-
+#include <queue>
 
 
 
@@ -32,7 +33,7 @@ private:
     std::vector<std::unique_ptr<Obstacle>> Obstacles;
     void remove_objects_if(sf::RenderWindow*);
     std::array<sf::Texture, 4> Textures;
-    
+    std::deque<MissleExplosion> MissleExplosions;
 
     
     

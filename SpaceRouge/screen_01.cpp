@@ -86,7 +86,7 @@ int screen_01::Run (sf::RenderWindow &App) {
         //removing objects if needed
         remove_objects_if(&App);
         
-        std::cout<<Obstacles.size()<<" "<<p.getMissles().size()<<std::endl;
+        //std::cout<<Obstacles.size()<<" "<<p.getMissles().size()<<std::endl;
         
         App.clear(sf::Color::White);
         
@@ -99,6 +99,11 @@ int screen_01::Run (sf::RenderWindow &App) {
         //draw loop
         for(const auto& o: Obstacles)
             App.draw(*o);
+        
+        
+        //draw loop
+        for(const auto& o: MissleExplosions)
+            App.draw(o);
    
         App.display();
         
@@ -125,8 +130,14 @@ void screen_01::remove_objects_if(sf::RenderWindow* App){
     
     
     auto prediction2 = [=](Missle& ref){
-        if( ref.pos.x > App->getSize().x || ref.checkForCollision(Obstacles))
-            return true; return false;
+        if( ref.pos.x > App->getSize().x)
+         return true;
+        if( ref.checkForCollision(Obstacles)){
+            MissleExplosions.emplace_front(ref.pos.x, ref.pos.y);
+            std::cout<<"Explosion!"<<ref.pos.x<<" "<<ref.pos.y<<std::endl;
+        return true;
+        }
+        return false;
     };
     
     Missles.erase(std::remove_if(Missles.begin(), Missles.end(),prediction2),Missles.end());
