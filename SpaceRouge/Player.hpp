@@ -30,9 +30,12 @@ public:
     void update();
     void shoot() noexcept;
     std::vector<Missle>& getMissles() noexcept;
+    int getHp() noexcept;
+    void setHp(int) noexcept;
 
     
 private:
+    int hp;
     sf::Sprite sprite;
     std::array<sf::Texture, 2> Textures;
     sf::CircleShape triangle;

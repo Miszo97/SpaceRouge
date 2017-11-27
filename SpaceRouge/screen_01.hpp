@@ -35,8 +35,8 @@ private:
     std::array<sf::Texture, 4> Textures;
     std::deque<MissleExplosion> MissleExplosions;
     sf::Texture missle_Exp_Tex;
-    
-    
+    sf::Text player_hp;
+    sf::Font font;
     
     
 };

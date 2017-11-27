@@ -20,6 +20,7 @@ Player::Player() : Element(40,200){
     
     pos.x = 40;
     pos.y = 200;
+    hp = 3;
     
     
     triangle = sf::CircleShape(50,3);
@@ -81,3 +82,6 @@ std::vector<Missle>& Player::getMissles() noexcept{
 
 
 inline sf::CircleShape& Player::getTriangle() { return triangle; }
+int Player::getHp() noexcept {return hp;}
+void Player::setHp(int _hp) noexcept {hp = _hp;}
+

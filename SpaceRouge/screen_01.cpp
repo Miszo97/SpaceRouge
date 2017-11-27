@@ -20,6 +20,7 @@
 
 screen_01::screen_01(){
     
+    //loading textures
     std::string path = "/Users/miszo97/Desktop/SpaceRouge/SpaceRouge/SmallObstacleTextureSprite.png";
     if (!Textures[0].loadFromFile(path)) {
         std::cerr << "Error loading SmallObstacleTextureSprite.png" << std::endl;
@@ -45,7 +46,16 @@ screen_01::screen_01(){
         return (-1);
     }
     
-
+    //loading font
+    if (!font.loadFromFile(resourcePath() + "sansation.ttf"))
+    {
+        std::cerr << "Error loading verdanab.ttf" << std::endl;
+        return (-1);
+    }
+    
+    player_hp.setFont(font);
+    player_hp.setPosition(20, 20);
+    
 
     
 }
@@ -86,6 +96,13 @@ int screen_01::Run (sf::RenderWindow &App) {
         
         p.update();
         
+        //check playr hp
+        if(p.getHp() == 0)
+            return -1;
+        
+        //actulisation player_hp text
+        player_hp.setString(std::to_string(p.getHp()));
+        
         for(const auto& o: Obstacles){
             o->move();
             o->update();
@@ -103,6 +120,7 @@ int screen_01::Run (sf::RenderWindow &App) {
         App.clear(sf::Color::Black);
         
         App.draw(p);
+        App.draw(player_hp);
         
         //draw loop
         for(const auto& m: p.getMissles())
@@ -131,8 +149,14 @@ int screen_01::Run (sf::RenderWindow &App) {
 
 void screen_01::remove_objects_if(sf::RenderWindow* App){
     
-    auto prediction1 =  [](const std::unique_ptr<Obstacle>& ref){
-        return  ref->pos.x<0 || ref->getHp()==0;
+    auto prediction1 =  [&](const std::unique_ptr<Obstacle>& ref){
+        if(ref->pos.x<0){
+            p.setHp(p.getHp()-1);
+            return true;
+        }
+        if(ref->getHp()==0)
+            return true;
+        return false;
     };
     
     Obstacles.erase(std::remove_if(Obstacles.begin(), Obstacles.end(), prediction1) ,Obstacles.end());
