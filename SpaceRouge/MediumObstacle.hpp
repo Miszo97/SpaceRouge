@@ -19,7 +19,14 @@ public:
     MediumObstacle(int x, int y,
                   sf::Color color,
                   const sf::CircleShape& shape, sf::Texture*);
+
+    MediumObstacle& operator=(const MediumObstacle&) = default;
+    MediumObstacle& operator=(MediumObstacle&&) = default;
     
+    MediumObstacle(const MediumObstacle&) = default;
+    MediumObstacle(MediumObstacle&&) = default;
+    
+   
     virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
     virtual void update() noexcept;
     sf::IntRect getIntRect() noexcept;

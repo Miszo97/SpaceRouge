@@ -17,6 +17,12 @@ public:
     BigObstacle(int x, int y,
                    sf::Color color,
                    const sf::CircleShape& shape, sf::Texture*);
+
+    BigObstacle(const BigObstacle&) = default;
+    BigObstacle(BigObstacle&&) = default;
+    
+    BigObstacle& operator=(const BigObstacle&) = default;
+    BigObstacle& operator=(BigObstacle&&) = default;
     
     virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
     virtual void update() noexcept;

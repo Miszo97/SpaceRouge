@@ -121,8 +121,6 @@ int screen_01::Run (sf::RenderWindow &App) {
         
         
         
-        
-        
     }
     
     
