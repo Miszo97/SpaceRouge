@@ -14,7 +14,6 @@
 		123686FF1FAB83A7009B8CAE /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 123686FE1FAB83A7009B8CAE /* ResourcePath.mm */; };
 		123687021FAB83A7009B8CAE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123687011FAB83A7009B8CAE /* main.cpp */; };
 		123687091FAB83A8009B8CAE /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 123687081FAB83A8009B8CAE /* sansation.ttf */; };
-		1236870B1FAB83A8009B8CAE /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1236870A1FAB83A8009B8CAE /* icon.png */; };
 		123687131FAB8DD3009B8CAE /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123687111FAB8DD3009B8CAE /* Game.cpp */; };
 		123687161FABB657009B8CAE /* cScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123687141FABB657009B8CAE /* cScreen.cpp */; };
 		123687191FABB753009B8CAE /* screen_01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123687171FABB753009B8CAE /* screen_01.cpp */; };
@@ -25,6 +24,9 @@
 		127E547A1FC5F14D00B667AA /* Collision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127E54781FC5F14C00B667AA /* Collision.cpp */; };
 		127E547D1FC6249300B667AA /* Explosion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127E547B1FC6249300B667AA /* Explosion.cpp */; };
 		12A1A7841FB06D2D0055CF34 /* functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12A1A7821FB06D2D0055CF34 /* functions.cpp */; };
+		12F194CB1FFEAFA900C6F13A /* SmallObstacleTextureSprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F194CA1FFEAFA900C6F13A /* SmallObstacleTextureSprite.png */; };
+		12F194CD1FFEAFCA00C6F13A /* BigObstacleTextureSprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F194CC1FFEAFCA00C6F13A /* BigObstacleTextureSprite.png */; };
+		12F194CF1FFEAFDF00C6F13A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F194CE1FFEAFDF00C6F13A /* icon.png */; };
 		12F7352A1FACAA83007FF8A8 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F735281FACAA83007FF8A8 /* Player.cpp */; };
 		12F7352D1FACE5C7007FF8A8 /* Element.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F7352B1FACE5C7007FF8A8 /* Element.cpp */; };
 		12F735301FAE2830007FF8A8 /* screen_02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F7352E1FAE2830007FF8A8 /* screen_02.cpp */; };
@@ -45,7 +47,6 @@
 		123687001FAB83A7009B8CAE /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
 		123687011FAB83A7009B8CAE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		123687081FAB83A8009B8CAE /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
-		1236870A1FAB83A8009B8CAE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		123687111FAB8DD3009B8CAE /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
 		123687121FAB8DD3009B8CAE /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
 		123687141FABB657009B8CAE /* cScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cScreen.cpp; sourceTree = "<group>"; };
@@ -65,11 +66,11 @@
 		127E547B1FC6249300B667AA /* Explosion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Explosion.cpp; sourceTree = "<group>"; };
 		127E547C1FC6249300B667AA /* Explosion.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Explosion.hpp; sourceTree = "<group>"; };
 		1297FC981FB61CA300C95751 /* MediumObstacleTextureSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MediumObstacleTextureSprite.png; sourceTree = "<group>"; };
-		1297FC991FB61FAD00C95751 /* BigObstacleTextureSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BigObstacleTextureSprite.png; sourceTree = "<group>"; };
-		1297FC9A1FB78AB500C95751 /* SmallObstacleTextureSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmallObstacleTextureSprite.png; sourceTree = "<group>"; };
 		12A1A7821FB06D2D0055CF34 /* functions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = functions.cpp; sourceTree = "<group>"; };
 		12A1A7831FB06D2D0055CF34 /* functions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = functions.hpp; sourceTree = "<group>"; };
-		12AB557E1FB4E993002887D9 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		12F194CA1FFEAFA900C6F13A /* SmallObstacleTextureSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SmallObstacleTextureSprite.png; path = Resources/SmallObstacleTextureSprite.png; sourceTree = "<group>"; };
+		12F194CC1FFEAFCA00C6F13A /* BigObstacleTextureSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BigObstacleTextureSprite.png; path = Resources/BigObstacleTextureSprite.png; sourceTree = "<group>"; };
+		12F194CE1FFEAFDF00C6F13A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/icon.png; sourceTree = "<group>"; };
 		12F735281FACAA83007FF8A8 /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		12F735291FACAA83007FF8A8 /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
 		12F7352B1FACE5C7007FF8A8 /* Element.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Element.cpp; sourceTree = "<group>"; };
@@ -110,40 +111,40 @@
 		123686FB1FAB83A7009B8CAE /* SpaceRouge */ = {
 			isa = PBXGroup;
 			children = (
-				12F735281FACAA83007FF8A8 /* Player.cpp */,
-				123E4D4A1FAF6D3E005E44F5 /* Obstacle.cpp */,
-				123E4D4B1FAF6D3E005E44F5 /* Obstacle.hpp */,
-				123E4D4D1FAF6FEA005E44F5 /* SmallObstacle.cpp */,
-				123E4D4E1FAF6FEA005E44F5 /* SmallObstacle.hpp */,
-				123E4D501FAF6FFB005E44F5 /* MediumObstacle.cpp */,
-				123E4D511FAF6FFB005E44F5 /* MediumObstacle.hpp */,
 				123E4D531FAF7009005E44F5 /* BigObstacle.cpp */,
-				123E4D541FAF7009005E44F5 /* BigObstacle.hpp */,
-				12F7352E1FAE2830007FF8A8 /* screen_02.cpp */,
-				12F7352F1FAE2830007FF8A8 /* screen_02.hpp */,
-				12F735291FACAA83007FF8A8 /* Player.hpp */,
-				127E547B1FC6249300B667AA /* Explosion.cpp */,
-				127E547C1FC6249300B667AA /* Explosion.hpp */,
-				12F7352B1FACE5C7007FF8A8 /* Element.cpp */,
-				12F7352C1FACE5C7007FF8A8 /* Element.hpp */,
-				123686FE1FAB83A7009B8CAE /* ResourcePath.mm */,
-				123687001FAB83A7009B8CAE /* ResourcePath.hpp */,
-				123687011FAB83A7009B8CAE /* main.cpp */,
-				123687111FAB8DD3009B8CAE /* Game.cpp */,
-				123687141FABB657009B8CAE /* cScreen.cpp */,
-				123687171FABB753009B8CAE /* screen_01.cpp */,
-				120089521FC85F280080EE3C /* MissleExplosion.cpp */,
-				120089531FC85F280080EE3C /* MissleExplosion.hpp */,
-				120089551FC85F340080EE3C /* MeteorExplosion.cpp */,
-				120089561FC85F340080EE3C /* MeteorExplosion.hpp */,
-				1227032E1FB3895E00865212 /* Missle.cpp */,
 				127E54781FC5F14C00B667AA /* Collision.cpp */,
-				127E54791FC5F14D00B667AA /* Collision.hpp */,
-				1227032F1FB3895E00865212 /* Missle.hpp */,
+				123687141FABB657009B8CAE /* cScreen.cpp */,
+				12F7352B1FACE5C7007FF8A8 /* Element.cpp */,
+				127E547B1FC6249300B667AA /* Explosion.cpp */,
+				123687111FAB8DD3009B8CAE /* Game.cpp */,
+				123687011FAB83A7009B8CAE /* main.cpp */,
+				123E4D501FAF6FFB005E44F5 /* MediumObstacle.cpp */,
+				120089551FC85F340080EE3C /* MeteorExplosion.cpp */,
+				1227032E1FB3895E00865212 /* Missle.cpp */,
+				120089521FC85F280080EE3C /* MissleExplosion.cpp */,
+				123E4D4A1FAF6D3E005E44F5 /* Obstacle.cpp */,
+				12F735281FACAA83007FF8A8 /* Player.cpp */,
+				123687171FABB753009B8CAE /* screen_01.cpp */,
+				12F7352E1FAE2830007FF8A8 /* screen_02.cpp */,
+				123E4D4D1FAF6FEA005E44F5 /* SmallObstacle.cpp */,
 				122703321FB4D2AD00865212 /* Spawner.cpp */,
-				123687181FABB753009B8CAE /* screen_01.hpp */,
+				123E4D541FAF7009005E44F5 /* BigObstacle.hpp */,
+				127E54791FC5F14D00B667AA /* Collision.hpp */,
 				123687151FABB657009B8CAE /* cScreen.hpp */,
+				12F7352C1FACE5C7007FF8A8 /* Element.hpp */,
+				127E547C1FC6249300B667AA /* Explosion.hpp */,
 				123687121FAB8DD3009B8CAE /* Game.hpp */,
+				123E4D511FAF6FFB005E44F5 /* MediumObstacle.hpp */,
+				120089561FC85F340080EE3C /* MeteorExplosion.hpp */,
+				1227032F1FB3895E00865212 /* Missle.hpp */,
+				120089531FC85F280080EE3C /* MissleExplosion.hpp */,
+				123E4D4B1FAF6D3E005E44F5 /* Obstacle.hpp */,
+				12F735291FACAA83007FF8A8 /* Player.hpp */,
+				123687001FAB83A7009B8CAE /* ResourcePath.hpp */,
+				123687181FABB753009B8CAE /* screen_01.hpp */,
+				12F7352F1FAE2830007FF8A8 /* screen_02.hpp */,
+				123E4D4E1FAF6FEA005E44F5 /* SmallObstacle.hpp */,
+				123686FE1FAB83A7009B8CAE /* ResourcePath.mm */,
 				123687031FAB83A7009B8CAE /* Resources */,
 				123686FC1FAB83A7009B8CAE /* Supporting Files */,
 			);
@@ -161,13 +162,12 @@
 		123687031FAB83A7009B8CAE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1297FC9A1FB78AB500C95751 /* SmallObstacleTextureSprite.png */,
-				1297FC991FB61FAD00C95751 /* BigObstacleTextureSprite.png */,
+				12F194CA1FFEAFA900C6F13A /* SmallObstacleTextureSprite.png */,
+				12F194CC1FFEAFCA00C6F13A /* BigObstacleTextureSprite.png */,
 				1297FC981FB61CA300C95751 /* MediumObstacleTextureSprite.png */,
-				12AB557E1FB4E993002887D9 /* background.png */,
+				12F194CE1FFEAFDF00C6F13A /* icon.png */,
 				122703311FB4D24200865212 /* asteroids */,
 				123687081FAB83A8009B8CAE /* sansation.ttf */,
-				1236870A1FAB83A8009B8CAE /* icon.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -199,7 +199,7 @@
 		123686F01FAB83A7009B8CAE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Miszo;
 				TargetAttributes = {
 					123686F81FAB83A7009B8CAE = {
@@ -230,8 +230,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1236870B1FAB83A8009B8CAE /* icon.png in Resources */,
+				12F194CF1FFEAFDF00C6F13A /* icon.png in Resources */,
 				123687091FAB83A8009B8CAE /* sansation.ttf in Resources */,
+				12F194CD1FFEAFCA00C6F13A /* BigObstacleTextureSprite.png in Resources */,
+				12F194CB1FFEAFA900C6F13A /* SmallObstacleTextureSprite.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,14 +288,37 @@
 		1236870C1FAB83A8009B8CAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					/Library/Frameworks/,
 					"$(inherited)",
 				);
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
 					"$(inherited)",
@@ -303,6 +328,7 @@
 					"$(inherited)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"$(SFML_SYSTEM)",
@@ -330,14 +356,36 @@
 		1236870D1FAB83A8009B8CAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					/Library/Frameworks/,
 					"$(inherited)",
 				);
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
 					"$(inherited)",
@@ -377,6 +425,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SpaceRouge/SpaceRouge-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mysho.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -387,6 +436,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SpaceRouge/SpaceRouge-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mysho.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
