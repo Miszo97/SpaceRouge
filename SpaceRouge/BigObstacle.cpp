@@ -13,8 +13,8 @@ BigObstacle::BigObstacle(
                                sf::Color _color,
                                const sf::CircleShape& _shape, sf::Texture* _texture) : Obstacle(x,y, _texture)
 {
-    size = 70;
-    hp = 50;
+    size  = 70;
+    hp    = 50;
     speed = 2;
     color = _color;
     shape = _shape;
@@ -35,7 +35,9 @@ void BigObstacle::draw(sf::RenderTarget& target, sf::RenderStates states) const 
 }
 
 void BigObstacle::update() noexcept{
+
     sprite.setPosition(pos.x, pos.y);
+
     if(++newSpriteEvery==4){
     sprite.setTextureRect(getIntRect());
     newSpriteEvery =0;

@@ -33,6 +33,13 @@ Player::Player() : Element(40,200){
         //return (-1);
     }
     
+    path = "/Users/miszo97/Desktop/SpaceRouge/SpaceRouge/Resources/blaster_sound.wav";
+    // Open it from an audio file
+    if (!sound_effects[0].openFromFile(path))
+    {
+        std::cerr<<"Couldn't load the sound";
+    }
+    
     sprite.setTexture(Textures[0]);
     
     sprite.setScale(0.15, 0.15);
@@ -64,6 +71,7 @@ void Player::update(){
 
 void Player::shoot() noexcept{
     Missles.emplace_back(pos.x+100,pos.y+5, Textures[1]);
+    sound_effects[0].play();
 }
 
 std::vector<Missle>& Player::getMissles() noexcept{

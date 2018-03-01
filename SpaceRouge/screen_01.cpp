@@ -6,17 +6,17 @@
 //  Copyright © 2017 Miszo. All rights reserved.
 //
 
+#include "BigObstacle.hpp"
+#include "MediumObstacle.hpp"
+#include "ResourcePath.hpp"
+#include "SmallObstacle.hpp"
+#include "Spawner.cpp"
+#include "functions.hpp"
 #include "screen_01.hpp"
 #include <SFML/Graphics.hpp>
-#include <iostream>
-#include "SmallObstacle.hpp"
-#include "MediumObstacle.hpp"
-#include "BigObstacle.hpp"
-#include "functions.hpp"
 #include <chrono>
+#include <iostream>
 #include <random>
-#include "ResourcePath.hpp"
-#include "Spawner.cpp"
 
 screen_01::screen_01(){
     
@@ -91,10 +91,13 @@ int screen_01::Run (sf::RenderWindow &App) {
             o->update();
         }
         
+
+	
+
         for(auto& o: MissleExplosions){
             o.update();
         }
-        
+
         //removing objects if needed
         remove_objects_if(&App);
         

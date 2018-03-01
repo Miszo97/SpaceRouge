@@ -13,7 +13,6 @@
 		12F194CB1FFEAFA900C6F13A /* SmallObstacleTextureSprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F194CA1FFEAFA900C6F13A /* SmallObstacleTextureSprite.png */; };
 		12F194CD1FFEAFCA00C6F13A /* BigObstacleTextureSprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F194CC1FFEAFCA00C6F13A /* BigObstacleTextureSprite.png */; };
 		12F194CF1FFEAFDF00C6F13A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F194CE1FFEAFDF00C6F13A /* icon.png */; };
-		12F194D31FFEB42D00C6F13A /* headers in Resources */ = {isa = PBXBuildFile; fileRef = 12F194D11FFEB42C00C6F13A /* headers */; };
 		12F195041FFEB7FE00C6F13A /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F194F71FFEB7FC00C6F13A /* Player.cpp */; };
 		12F195051FFEB7FE00C6F13A /* MediumObstacle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F194F81FFEB7FC00C6F13A /* MediumObstacle.cpp */; };
 		12F195061FFEB7FE00C6F13A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F194F91FFEB7FC00C6F13A /* main.cpp */; };
@@ -39,13 +38,28 @@
 		123686FD1FAB83A7009B8CAE /* SpaceRouge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpaceRouge-Info.plist"; sourceTree = "<group>"; };
 		123686FE1FAB83A7009B8CAE /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
 		123687081FAB83A8009B8CAE /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
+		126DE9752048B00200F0CD55 /* cScreen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cScreen.hpp; sourceTree = "<group>"; };
+		126DE9762048B00300F0CD55 /* Element.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Element.hpp; sourceTree = "<group>"; };
+		126DE9772048B00300F0CD55 /* Explosion.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Explosion.hpp; sourceTree = "<group>"; };
+		126DE9782048B00300F0CD55 /* MissleExplosion.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MissleExplosion.hpp; sourceTree = "<group>"; };
+		126DE9792048B00300F0CD55 /* BigObstacle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigObstacle.hpp; sourceTree = "<group>"; };
+		126DE97A2048B00300F0CD55 /* screen_01.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = screen_01.hpp; sourceTree = "<group>"; };
+		126DE97B2048B00400F0CD55 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		126DE97C2048B00400F0CD55 /* screen_02.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = screen_02.hpp; sourceTree = "<group>"; };
+		126DE97D2048B00400F0CD55 /* Collision.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Collision.hpp; sourceTree = "<group>"; };
+		126DE97E2048B00400F0CD55 /* Obstacle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Obstacle.hpp; sourceTree = "<group>"; };
+		126DE97F2048B00400F0CD55 /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
+		126DE9802048B00500F0CD55 /* Missle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Missle.hpp; sourceTree = "<group>"; };
+		126DE9812048B00500F0CD55 /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
+		126DE9822048B00500F0CD55 /* MediumObstacle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MediumObstacle.hpp; sourceTree = "<group>"; };
+		126DE9832048B00500F0CD55 /* MeteorExplosion.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MeteorExplosion.hpp; sourceTree = "<group>"; };
+		126DE9842048B00500F0CD55 /* SmallObstacle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SmallObstacle.hpp; sourceTree = "<group>"; };
 		1297FC981FB61CA300C95751 /* MediumObstacleTextureSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MediumObstacleTextureSprite.png; sourceTree = "<group>"; };
 		12A1A7821FB06D2D0055CF34 /* functions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = functions.cpp; sourceTree = "<group>"; };
 		12A1A7831FB06D2D0055CF34 /* functions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = functions.hpp; sourceTree = "<group>"; };
 		12F194CA1FFEAFA900C6F13A /* SmallObstacleTextureSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SmallObstacleTextureSprite.png; path = Resources/SmallObstacleTextureSprite.png; sourceTree = "<group>"; };
 		12F194CC1FFEAFCA00C6F13A /* BigObstacleTextureSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BigObstacleTextureSprite.png; path = Resources/BigObstacleTextureSprite.png; sourceTree = "<group>"; };
 		12F194CE1FFEAFDF00C6F13A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/icon.png; sourceTree = "<group>"; };
-		12F194D11FFEB42C00C6F13A /* headers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = headers; sourceTree = "<group>"; };
 		12F194F71FFEB7FC00C6F13A /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		12F194F81FFEB7FC00C6F13A /* MediumObstacle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MediumObstacle.cpp; sourceTree = "<group>"; };
 		12F194F91FFEB7FC00C6F13A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -97,6 +111,22 @@
 		123686FB1FAB83A7009B8CAE /* SpaceRouge */ = {
 			isa = PBXGroup;
 			children = (
+				126DE9792048B00300F0CD55 /* BigObstacle.hpp */,
+				126DE97D2048B00400F0CD55 /* Collision.hpp */,
+				126DE9752048B00200F0CD55 /* cScreen.hpp */,
+				126DE9762048B00300F0CD55 /* Element.hpp */,
+				126DE9772048B00300F0CD55 /* Explosion.hpp */,
+				126DE97B2048B00400F0CD55 /* Game.hpp */,
+				126DE9822048B00500F0CD55 /* MediumObstacle.hpp */,
+				126DE9832048B00500F0CD55 /* MeteorExplosion.hpp */,
+				126DE9802048B00500F0CD55 /* Missle.hpp */,
+				126DE9782048B00300F0CD55 /* MissleExplosion.hpp */,
+				126DE97E2048B00400F0CD55 /* Obstacle.hpp */,
+				126DE97F2048B00400F0CD55 /* Player.hpp */,
+				126DE9812048B00500F0CD55 /* ResourcePath.hpp */,
+				126DE97A2048B00300F0CD55 /* screen_01.hpp */,
+				126DE97C2048B00400F0CD55 /* screen_02.hpp */,
+				126DE9842048B00500F0CD55 /* SmallObstacle.hpp */,
 				12F195121FFEB80F00C6F13A /* screen_01.cpp */,
 				12F195131FFEB80F00C6F13A /* screen_02.cpp */,
 				12F195141FFEB80F00C6F13A /* SmallObstacle.cpp */,
@@ -114,7 +144,6 @@
 				12F195031FFEB7FE00C6F13A /* MissleExplosion.cpp */,
 				12F195011FFEB7FD00C6F13A /* Obstacle.cpp */,
 				12F194F71FFEB7FC00C6F13A /* Player.cpp */,
-				12F194D11FFEB42C00C6F13A /* headers */,
 				123686FE1FAB83A7009B8CAE /* ResourcePath.mm */,
 				123687031FAB83A7009B8CAE /* Resources */,
 				123686FC1FAB83A7009B8CAE /* Supporting Files */,
@@ -204,7 +233,6 @@
 				12F194CF1FFEAFDF00C6F13A /* icon.png in Resources */,
 				123687091FAB83A8009B8CAE /* sansation.ttf in Resources */,
 				12F194CD1FFEAFCA00C6F13A /* BigObstacleTextureSprite.png in Resources */,
-				12F194D31FFEB42D00C6F13A /* headers in Resources */,
 				12F194CB1FFEAFA900C6F13A /* SmallObstacleTextureSprite.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,7 +9,7 @@
 #include "screen_02.hpp"
 #include "ResourcePath.hpp"
 #include <iostream>
-
+#include <SFML/Audio.hpp>
 
 
 
@@ -23,6 +23,7 @@ int screen_02::Run (sf::RenderWindow &App)  {
         return (-1);
     }
     
+
     //better option emplace_back. Additional cost of move constructor
     options.push_back(option("Start", 1, Font, 40, { 280.f, 160.f }, sf::Color::White));
     options.push_back(option("Exit", -1, Font, 40, { 280.f, 220.f }, sf::Color::Black));

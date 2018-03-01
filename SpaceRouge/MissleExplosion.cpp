@@ -10,14 +10,15 @@
 
 MissleExplosion::MissleExplosion(int x, int y, sf::Texture* texture) : Explosion(x ,y, texture)
 {
-    shape = sf::CircleShape(40);
+    current_sprite.first  = 0;
+    current_sprite.second = 0;
+    expired               = false;
+    expired_time          = 1;
+    shape                 = sf::CircleShape(40);
+
+    shape.setFillColor(sf::Color::Red);
     shape.setPosition(pos.x, pos.y);
     sprite.setPosition(pos.x-26, pos.y-26);
-    shape.setFillColor(sf::Color::Red);
-    expired_time = 1;
-    expired = false;
-    current_sprite.first = 0;
-    current_sprite.second = 0;
     sprite.setTextureRect(sf::IntRect(0,0,0,0));
 }
 

@@ -23,7 +23,7 @@ Missle::Missle(int x, int y, sf::Texture& texture) : Element(x,y){
     shape = sf::CircleShape(5);
     shape.setFillColor(sf::Color::Red);
     shape.setPosition(pos.x, pos.y);
-    speed = 5;
+    speed = 15;
     sprite.setTexture(texture);
     
 }

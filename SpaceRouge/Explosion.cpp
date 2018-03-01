@@ -10,7 +10,7 @@
 
 Explosion::Explosion(int x, int y, sf::Texture* _texture) : Element(x, y)
 {
+    newSpriteEvery = 3;
     texture = _texture;
     sprite.setTexture(*texture);
-    newSpriteEvery = 3;
 }

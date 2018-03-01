@@ -9,10 +9,7 @@
 #include "Element.hpp"
 
 
-Element::Element(int x, int y){
-    
-    pos.x = x;
-    pos.y = y;
-    
-    
-}
+Element::Element(int _x, int _y)
+
+{pos.x= _x;
+    pos.y = _y;}
